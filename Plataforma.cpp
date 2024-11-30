@@ -13,7 +13,7 @@ void Plataforma::agregarJuego(Juego juego) {
 }
 
 void Plataforma::listarJuegos() {
-  for (Juego juego : juegos) {
-    cout << "Juego: " << juego.getTitulo() << ", Género: " << juego.getGenero() << endl;
+  for (int i = 0; i < juegos.size(); i++) {
+    cout << "Juego: " << juegos[i].getTitulo() << ", Género: " << juegos[i].getGenero() << endl;
   }
 }
