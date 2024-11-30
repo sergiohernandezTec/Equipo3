@@ -22,7 +22,7 @@ class Juego {
     Juego(string t,string g, int e);
     void agregarPerfil(Perfil p);
     void mostrarPerfiles();
-    vector listaPerfil();
+    void listaPerfil();
     string getTitulo();
     string getGenero();
     int getEdadMin();
