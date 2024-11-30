@@ -3,11 +3,17 @@
 #include <string>
 using namespace std;
 
-Plataforma::Plataforma(string _nombre, string _tipo){
+Plataforma::Plataforma(string _nombre, string _tipo) {
   nombre = _nombre;
   tipo = _tipo;
- }
-string getNombre();
-string getTipo();
-vector<Juego> listarJuegos();
-void AgregarJuego(Juego juego);
+}
+
+void Plataforma::agregarJuego(Juego juego) {
+  juegos.push_back(juego);
+}
+
+void Plataforma::listarJuegos() {
+  for (Juego juego : juegos) {
+    cout << "Juego: " << juego.getTitulo() << ", Género: " << juego.getGenero() << endl;
+  }
+}
