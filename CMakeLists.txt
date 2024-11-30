@@ -7,4 +7,6 @@ add_executable(Equipo3 main.cpp
         Juego.cpp
         Juego.h
         Jugador.cpp
-        Jugador.h)
+        Jugador.h
+        Perfil.cpp
+        Perfil.h)
