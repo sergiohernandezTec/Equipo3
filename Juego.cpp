@@ -1,6 +1,6 @@
 
 #include "Juego.h"
-
+#include "Perfil.h"
 
 Juego::Juego(string t,string g, int e) {
     titulo = t;
@@ -17,7 +17,7 @@ void Juego::agregarPerfil(Perfil p) {
 
 void Juego::listaPerfil() {
     for (int k=0; k<perfiles.size();k++) {
-        perfiles[K].mostrar();
+        perfiles[k].mostrar();
     }
 
 }
