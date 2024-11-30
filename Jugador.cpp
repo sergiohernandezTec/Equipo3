@@ -20,7 +20,7 @@ void Jugador::jugar(Juego juego) {
     }
 }
 
-Perfil::crearPerfil(string nickname) {
+Perfil Jugador::crearPerfil(string nickname) {
     return Perfil("ID-"+ nombre,nickname);
 }
 
@@ -30,6 +30,6 @@ string Jugador::getNombre() {
 }
 
 
-int jugador::getEdad() {
+int Jugador::getEdad() {
     return edad;
 }
