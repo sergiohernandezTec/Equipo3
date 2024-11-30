@@ -1,7 +1,7 @@
 #include<string>
 using namespace std;
 #include<iostream>
-
+#include<vector>
 
 
 
@@ -13,10 +13,19 @@ using namespace std;
 
 class Juego {
     private:
-    string nombre;
-    string edad;
+    string titulo;
+    string genero;
+    int edadMin
+    vector <Perfil> perfiles;
+
     public:
-    Juego(string n,string e);
+    Juego(string t,string g, int e);
+    void agregarPerfil(Perfil p);
+    void mostrarPerfiles();
+    vector listaPerfil();
+    string getTitulo();
+    string getGenero();
+    int getEdadMin();
 
 
 };
