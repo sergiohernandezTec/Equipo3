@@ -10,15 +10,22 @@ using namespace std;
 class Jugador {
 private:
     string nombre;
-    string edad;
+    int edad;
 public:
-    Jugador(string n,string e);
-    void jugar(Juego:j);
-    Perfil::crearPerfil(string nickname)
-
+    Jugador(string n,int e);
+    void jugar(Juego j);
+    Perfil crearPerfil(string nickname);
+    string getNombre();
+    int getEdad();
 
 };
 
 
 
 #endif //JUGADOR_H
+
+
+
+
+
+
