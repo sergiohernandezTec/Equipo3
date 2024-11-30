@@ -5,9 +5,13 @@ using namespace std;
 
 
 
-
 #ifndef JUEGO_H
 #define JUEGO_H
+
+#include <string>
+#include <iostream>
+#include <vector>
+#include "Perfil.h"
 
 
 
@@ -15,14 +19,13 @@ class Juego {
     private:
     string titulo;
     string genero;
-    int edadMin
+    int edadMin;
     vector <Perfil> perfiles;
 
     public:
     Juego(string t,string g, int e);
     void agregarPerfil(Perfil p);
-    void mostrarPerfiles();
-    void listaPerfil();
+    void listarPerfil();
     string getTitulo();
     string getGenero();
     int getEdadMin();

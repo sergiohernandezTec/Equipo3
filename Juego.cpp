@@ -15,7 +15,7 @@ void Juego::agregarPerfil(Perfil p) {
 
 
 
-void Juego::listaPerfil() {
+void Juego::listarPerfil() {
     for (int k=0; k<perfiles.size();k++) {
         perfiles[k].mostrar();
     }

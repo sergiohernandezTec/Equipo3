@@ -6,30 +6,29 @@ using namespace std;
 #include "Perfil.h"
 
 
-Jugador::Jugador(string n,int e) {
-    nombre=n;
-    edad=e;
+
+Jugador::Jugador(string n, int e) {
+    nombre = n;
+    edad = e;
 }
 
-
 void Jugador::jugar(Juego juego) {
-    if (edad >= juego.getEdadMinima()) {
-        cout << nombre << " está jugando " << juego.getTitulo() << std::endl;
+    if (edad >= juego.getEdadMin()) {
+        cout << nombre << " está jugando " << juego.getTitulo() << endl;
     } else {
-        cout << "Edad insuficiente para jugar " << juego.getTitulo() << std::endl;
+        cout << "Edad insuficiente para jugar " << juego.getTitulo() << endl;
     }
 }
 
 Perfil Jugador::crearPerfil(string nickname) {
-    return Perfil("ID-"+ nombre,nickname);
+    return Perfil("ID-" + nombre, nickname);
 }
-
 
 string Jugador::getNombre() {
     return nombre;
 }
 
-
 int Jugador::getEdad() {
     return edad;
 }
+

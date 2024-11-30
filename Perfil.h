@@ -14,10 +14,11 @@ class Perfil {
     vector<string> logros;
     public:
     Perfil(string u,string n);
-    void agregarLogro();
-    void listarLogros();
+    void agregarLogro(string l);
+    vector<string> listarLogros();
     string getUsuarioID();
     string getNickname();
+    void mostrar();
 
 };
 
