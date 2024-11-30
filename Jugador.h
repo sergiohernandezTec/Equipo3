@@ -1,6 +1,5 @@
 #include<string>
 using namespace std;
-#include<iostream>
 #include"Juego.h"
 #ifndef JUGADOR_H
 #define JUGADOR_H

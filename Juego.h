@@ -2,15 +2,8 @@
 using namespace std;
 #include<iostream>
 #include<vector>
-
-
-
 #ifndef JUEGO_H
 #define JUEGO_H
-
-#include <string>
-#include <iostream>
-#include <vector>
 #include "Perfil.h"
 
 

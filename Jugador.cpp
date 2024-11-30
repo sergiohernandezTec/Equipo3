@@ -2,10 +2,6 @@
 using namespace std;
 #include<iostream>
 #include "Jugador.h"
-#include "Juego.h"
-#include "Perfil.h"
-
-
 
 Jugador::Jugador(string n, int e) {
     nombre = n;
