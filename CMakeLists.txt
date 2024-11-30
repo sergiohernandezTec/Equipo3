@@ -9,4 +9,6 @@ add_executable(Equipo3 main.cpp
         Jugador.cpp
         Jugador.h
         Perfil.cpp
-        Perfil.h)
+        Perfil.h
+        Plataforma.cpp
+        Plataforma.h)
