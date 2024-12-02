@@ -1,4 +1,3 @@
-
 #include "Juego.h"
 #include "Perfil.h"
 
@@ -33,8 +32,7 @@ string Juego::getGenero() {
 }
 
 
-int Juego::getEdadMin() {
+int Juego::getEdadMin(){
     return edadMin;
 
 }
-
