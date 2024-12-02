@@ -11,4 +11,6 @@ add_executable(Equipo3 main.cpp
         Perfil.cpp
         Perfil.h
         Plataforma.cpp
-        Plataforma.h)
+        Plataforma.h
+        Consola.cpp
+        Consola.h)
