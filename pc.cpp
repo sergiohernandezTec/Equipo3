@@ -3,19 +3,21 @@
 //
 
 #include "pc.h"
-#include "PC.h"
+#include "Plataforma.h"
 #include <iostream>
+#include <string>
+using namespace std;
 
-PC::PC(string n, string e) : Plataforma.h {
+PC::PC(string e) : Plataforma( "PC") {
     especificaciones = e;
 }
 
-PC::actualizarDrivers() {
+
+void PC::actualizarDrivers() {
     cout << "Actualizando drivers en la PC: " << especificaciones << endl;
 }
 
- PC::instalarJuego(string juego) {
-    agregarJuego(juego);
+void PC::instalarJuego(string juego) {
     cout << "Instalando el juego \"" << juego << "\" en la PC \"" << nombre << "\"" << endl;
 }
 
@@ -23,7 +25,7 @@ string PC::getEspecificaciones() {
     return especificaciones;
 }
 
- PC::mostrar() {
-    mostrar();
+void PC::mostrar() {
+    listarJuegos();
     cout << "Especificaciones: " << especificaciones << endl;
 }

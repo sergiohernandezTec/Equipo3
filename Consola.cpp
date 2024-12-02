@@ -12,6 +12,9 @@ Consola::Consola(string mod, string fab){
 bool Consola::encender(){
  return true;
 }
+
+
 void Consola::descargarJuego(Juego j){
   juegos.push_back(j);
 }
+

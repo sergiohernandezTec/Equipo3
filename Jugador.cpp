@@ -8,11 +8,11 @@ Jugador::Jugador(string n, int e) {
     edad = e;
 }
 
-void Jugador::jugar(Juego juego) {
-    if (edad >= juego.getEdadMin()) {
-        cout << nombre << " está jugando " << juego.getTitulo() << endl;
+void Jugador::jugar(Juego j) {
+    if (edad >= j.getEdadMin()) {
+        cout << nombre << " está jugando " << j.getTitulo() << endl;
     } else {
-        cout << "Edad insuficiente para jugar " << juego.getTitulo() << endl;
+        cout << "Edad insuficiente para jugar " << j.getTitulo() << endl;
     }
 }
 

@@ -13,7 +13,7 @@ private:
     string especificaciones;
 
 public:
-    PC(string n, string e);
+    PC( string e);
     void actualizarDrivers();
     void instalarJuego(string juego);
     string getEspecificaciones();
@@ -24,5 +24,3 @@ public:
 
 
 
-
-#endif //PC_H

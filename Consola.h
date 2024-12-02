@@ -18,6 +18,7 @@ class Consola {
     Consola(string mod, string fab);
     bool encender();
     void descargarJuego(Juego j);
+
 };
 
 

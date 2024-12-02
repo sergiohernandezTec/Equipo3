@@ -11,6 +11,8 @@ private:
     string tipo;
     vector<Juego> juegos;
 public:
+    Plataforma();
+
     Plataforma(string _nombre, string _tipo);
     void agregarJuego(Juego juego);
     void listarJuegos();

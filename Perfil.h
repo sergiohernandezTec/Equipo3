@@ -13,6 +13,8 @@ class Perfil {
     string nickname;
     vector<string> logros;
     public:
+    Perfil();
+
     Perfil(string u,string n);
     void agregarLogro(string l);
     vector<string> listarLogros();
