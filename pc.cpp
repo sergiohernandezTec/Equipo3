@@ -8,9 +8,7 @@
 #include <string>
 using namespace std;
 
-PC::PC(string e){
-    especificaciones = e;
-}
+PC::PC(string nombre, string espec) : Plataforma(nombre, "PC"), especificaciones(espec) {}
 
 
 void PC::actualizarDrivers() {
@@ -18,7 +16,7 @@ void PC::actualizarDrivers() {
 }
 
 void PC::instalarJuego(string juego) {
-    cout << "Instalando el juego \"" << juego << "\" en la PC \""  << endl;
+    cout << "Instalando el juego " << juego << " en la PC."  << endl;
 }
 
 string PC::getEspecificaciones() {
@@ -26,6 +24,5 @@ string PC::getEspecificaciones() {
 }
 
 void PC::mostrar() {
-    listarJuegos();
     cout << "Especificaciones: " << especificaciones << endl;
 }

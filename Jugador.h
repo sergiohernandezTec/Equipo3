@@ -1,6 +1,7 @@
 #include<string>
 using namespace std;
 #include"Juego.h"
+#include "Perfil.h"
 #ifndef JUGADOR_H
 #define JUGADOR_H
 
@@ -11,8 +12,8 @@ private:
     string nombre;
     int edad;
 public:
-    Jugador(string n,int e);
-    void jugar(Juego j);
+    Jugador(string nombre,int edad);
+    void jugar(Juego juego);
     Perfil crearPerfil(string nickname);
     string getNombre();
     int getEdad();

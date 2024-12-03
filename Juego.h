@@ -12,18 +12,17 @@ class Juego {
 private:
     string titulo;
     string genero;
-    int edadMin;
-    vector <Perfil> perfiles;
+    int edadMinima;
+    vector<Perfil> perfiles;
 
 public:
-
-
-    Juego(string t,string g, int e);
-    void agregarPerfil(Perfil p);
-    void listarPerfil();
+    Juego(string titulo,string genero, int edadMinima);
+    Juego();
+    void agregarPerfil(Perfil perfil);
+    void listarPerfiles();
     string getTitulo();
     string getGenero();
-    int getEdadMin();
+    int getEdadMinima();
 };
 
 

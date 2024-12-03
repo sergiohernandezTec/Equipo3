@@ -1,34 +1,25 @@
 #include "Perfil.h"
 #include <iostream>
 
-Perfil::Perfil() {
-
-}
 
 Perfil::Perfil(string u, string n) {
     usuarioID = u;
     nickname = n;
 }
 
-void Perfil::mostrar() {
-    cout << usuarioID << "-" << nickname << endl;
-}
-
-void Perfil::agregarLogro(string l) {
-    logros.push_back(l);
+void Perfil::agregarLogro(string logro) {
+    logros.push_back(logro);
 }
 
 vector<string> Perfil::listarLogros() {
     return logros;
 }
 
-string Perfil::getUsuarioID() {
-    return usuarioID;
+void Perfil::mostrar() {
+    cout << "Usuario: " << usuarioID << ", Nickname: " << nickname << endl;
+    cout << "Logros:" << endl;
+    for (string& logro : logros) {
+        cout << "- " << logro << endl;
+    }
 }
-
-string Perfil::getNickname() {
-    return nickname;
-}
-
-
 

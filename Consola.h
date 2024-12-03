@@ -5,15 +5,17 @@ using namespace std;
 #ifndef CONSOLA_H
 #define CONSOLA_H
 #include <vector>
+#include <string>
+#include "Plataforma.h"
 
-class Consola {
+class Consola : public Plataforma {
   private:
     string modelo;
     string fabricante;
     vector <Juego> juegos;
 
   public:
-    Consola(string mod, string fab);
+    Consola(string modelo, string fabricante);
     bool encender();
     void descargarJuego(Juego j);
 

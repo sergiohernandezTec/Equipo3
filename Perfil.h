@@ -11,12 +11,10 @@ private:
     string nickname;
     vector<string> logros;
 public:
-    Perfil();
-    Perfil(string u, string n);
-    void agregarLogro(string l);
+    Perfil(string usuarioID, string nickname);
+    void agregarLogro(string logro);
     vector<string> listarLogros();
     string getUsuarioID();
-    string getNickname();
     void mostrar();
 };
 

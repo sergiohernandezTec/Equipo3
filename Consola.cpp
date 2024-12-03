@@ -1,18 +1,16 @@
 
-
+#include <iostream>
 #include "Consola.h"
 
-Consola::Consola(string mod, string fab){
-  modelo = mod;
-  fabricante = fab;
-}
+Consola::Consola(string mod, string fab) : Plataforma(mod, "Consola"), modelo(mod), fabricante(fab) {}
 
 bool Consola::encender(){
- return true;
+    cout << "La consola " << modelo << " está encendida." << endl;
+    return true;
 }
 
 
-void Consola::descargarJuego(Juego j){
-  juegos.push_back(j);
+void Consola::descargarJuego(Juego juego){
+  agregarJuego(juego);
 }
 

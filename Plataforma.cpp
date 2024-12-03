@@ -1,8 +1,6 @@
 #include "Plataforma.h"
 #include <iostream>
 
-Plataforma::Plataforma() : nombre(""), tipo("") {}
-
 Plataforma::Plataforma(string _nombre, string _tipo) {
   nombre = _nombre;
   tipo = _tipo;

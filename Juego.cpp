@@ -8,15 +8,15 @@
 Juego::Juego(string t,string g, int e) {
     titulo = t;
     genero = g;
-    edadMin = e;
+    edadMinima = e;
 }
 
 
-void Juego::agregarPerfil(Perfil p) {
-    perfiles.push_back(p);
+void Juego::agregarPerfil(Perfil perfil) {
+    perfiles.push_back(perfil);
 }
 
-void Juego::listarPerfil() {
+void Juego::listarPerfiles() {
     for(int k=0; k<perfiles.size();k++) {
         perfiles[k].mostrar();
     }
@@ -33,7 +33,7 @@ string Juego::getGenero() {
 }
 
 
-int Juego::getEdadMin(){
-    return edadMin;
+int Juego::getEdadMinima(){
+    return edadMinima;
 
 }

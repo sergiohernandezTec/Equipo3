@@ -13,7 +13,7 @@ private:
     string especificaciones;
 
 public:
-    PC( string e);
+    PC( string nombre, string especificaciones);
     void actualizarDrivers();
     void instalarJuego(string juego);
     string getEspecificaciones();
