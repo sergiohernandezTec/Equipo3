@@ -1,6 +1,4 @@
-//
-// Created by Itzelene Valladares Brito on 01/12/24.
-//
+
 #include <string>
 #include "Juego.h"
 using namespace std;

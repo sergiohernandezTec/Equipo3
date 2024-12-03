@@ -1,11 +1,7 @@
 #include "Plataforma.h"
 #include <iostream>
-#include <string>
-using namespace std;
-
 
 Plataforma::Plataforma() : nombre(""), tipo("") {}
-
 
 Plataforma::Plataforma(string _nombre, string _tipo) {
   nombre = _nombre;
@@ -21,3 +17,8 @@ void Plataforma::listarJuegos() {
     cout << "Juego: " << juego.getTitulo() << ", Género: " << juego.getGenero() << endl;
   }
 }
+
+void Plataforma::mostrar() {
+  cout << "Plataforma: " << nombre << ", Tipo: " << tipo << endl;
+}
+

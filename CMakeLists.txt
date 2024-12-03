@@ -3,19 +3,12 @@ project(Equipo3)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Equipo3 main.cpp
+add_executable(MiProyecto
+        main.cpp
         Consola.cpp
-        Consola.h
         Juego.cpp
-        Juego.h
         Jugador.cpp
-        Jugador.h
         Plataforma.cpp
-        Plataforma.h
-        pc.cpp
-        pc.h
-        Consola.cpp
-        Consola.h
         Perfil.cpp
-        Perfil.h
+        PC.cpp
 )
