@@ -12,12 +12,9 @@ Juego::Juego(string t,string g, int e) {
 }
 
 
-
 void Juego::agregarPerfil(Perfil p) {
     perfiles.push_back(p);
 }
-
-
 
 void Juego::listarPerfil() {
     for(int k=0; k<perfiles.size();k++) {
@@ -25,7 +22,6 @@ void Juego::listarPerfil() {
     }
 
 }
-
 
 string Juego::getTitulo() {
     return titulo;
