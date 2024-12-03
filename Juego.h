@@ -16,7 +16,7 @@ private:
     vector <Perfil> perfiles;
 
 public:
-    Juego();
+
 
     Juego(string t,string g, int e);
     void agregarPerfil(Perfil p);

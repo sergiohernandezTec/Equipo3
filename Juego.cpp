@@ -2,7 +2,7 @@
 #include "Perfil.h"
 
 
-Juego::Juego() : titulo(""), genero(""), edadMin(0) {}
+
 
 
 Juego::Juego(string t,string g, int e) {
