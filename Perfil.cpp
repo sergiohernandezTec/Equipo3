@@ -18,8 +18,8 @@ vector<string> Perfil::listarLogros() {
 void Perfil::mostrar() {
     cout << "Usuario: " << usuarioID << ", Nickname: " << nickname << endl;
     cout << "Logros:" << endl;
-    for (string& logro : logros) {
-        cout << "- " << logro << endl;
+    for (int i = 0; i < logros.size(); i++) {
+        cout << logros[i] << endl;
     }
 }
 
