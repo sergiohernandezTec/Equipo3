@@ -1,12 +1,16 @@
-
 #include "Juego.h"
 #include "Perfil.h"
+
+
+Juego::Juego() : titulo(""), genero(""), edadMin(0) {}
+
 
 Juego::Juego(string t,string g, int e) {
     titulo = t;
     genero = g;
     edadMin = e;
 }
+
 
 
 void Juego::agregarPerfil(Perfil p) {
@@ -16,7 +20,7 @@ void Juego::agregarPerfil(Perfil p) {
 
 
 void Juego::listarPerfil() {
-    for (int k=0; k<perfiles.size();k++) {
+    for(int k=0; k<perfiles.size();k++) {
         perfiles[k].mostrar();
     }
 
@@ -33,8 +37,7 @@ string Juego::getGenero() {
 }
 
 
-int Juego::getEdadMin() {
+int Juego::getEdadMin(){
     return edadMin;
 
 }
-

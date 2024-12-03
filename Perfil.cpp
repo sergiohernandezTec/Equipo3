@@ -1,7 +1,9 @@
-
 #include "Perfil.h"
+#include <iostream>
 
+Perfil::Perfil() {
 
+}
 
 Perfil::Perfil(string u, string n) {
     usuarioID = u;

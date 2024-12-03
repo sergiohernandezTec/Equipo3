@@ -1,7 +1,7 @@
 #include "Plataforma.h"
 #include <iostream>
-#include <string>
-using namespace std;
+
+Plataforma::Plataforma() : nombre(""), tipo("") {}
 
 Plataforma::Plataforma(string _nombre, string _tipo) {
   nombre = _nombre;
@@ -13,7 +13,12 @@ void Plataforma::agregarJuego(Juego juego) {
 }
 
 void Plataforma::listarJuegos() {
-  for (int i = 0; i < juegos.size(); i++) {
-    cout << "Juego: " << juegos[i].getTitulo() << ", Género: " << juegos[i].getGenero() << endl;
+  for (Juego& juego : juegos) {
+    cout << "Juego: " << juego.getTitulo() << ", Género: " << juego.getGenero() << endl;
   }
 }
+
+void Plataforma::mostrar() {
+  cout << "Plataforma: " << nombre << ", Tipo: " << tipo << endl;
+}
+

@@ -9,13 +9,15 @@ using namespace std;
 
 
 class Juego {
-    private:
+private:
     string titulo;
     string genero;
     int edadMin;
     vector <Perfil> perfiles;
 
-    public:
+public:
+    Juego();
+
     Juego(string t,string g, int e);
     void agregarPerfil(Perfil p);
     void listarPerfil();
