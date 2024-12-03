@@ -22,8 +22,6 @@ class Juego {
     string getTitulo();
     string getGenero();
     int getEdadMin();
-
-
 };
 
 
